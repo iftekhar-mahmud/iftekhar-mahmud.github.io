@@ -40,7 +40,7 @@ To view or modify the project locally:
   ```bash
   cd Portfolio-Website
 
-3. Open `index.html` in your preferred browser.
+3. **Open index.html in your preferred browser.**
 
 
 ## 📄 License

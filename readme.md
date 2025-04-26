@@ -4,7 +4,7 @@ Welcome to my personal portfolio website, designed to showcase my academic backg
 
 ## 🔗 Live Site
 
-Explore the live version here: [https://ftekhar.rf.gd](https://ftekhar.rf.gd)
+Explore the live version here: [https://iftekhar.rf.gd](https://iftekhar.rf.gd)
 
 ## 📁 Repository
 

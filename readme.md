@@ -36,16 +36,17 @@ To view or modify the project locally:
    ```bash
    git clone https://github.com/iftekhar-mahmud/Portfolio-Website.git
 
-2. **Clone the repository**:
-  ```bash
-  cd Portfolio-Website
+2. **Navigate to the project directory**:
+   ```bash
+   cd Portfolio-Website
 
-3. **Open index.html in your preferred browser.**
 
+3. **Open `index.html` in your preferred browser.**
 
 ## 📄 License
 This project is open-source and available under the MIT License.
 
 ## 🙌 Acknowledgments
 Gratitude to all mentors, peers, and resources that contributed to the development of this portfolio.
+
 

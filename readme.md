@@ -24,9 +24,6 @@ GitHub Repository: [https://github.com/iftekhar-mahmud/Portfolio-Website](https:
 - **Interactive Elements**: Engaging UI components to enhance user experience.
 - **Downloadable CV**: Option to view or download the CV directly from the site.
 
-## 📷 Screenshots
-
-*_(Include screenshots of your website here to give visitors a visual overview.)_*
 
 ## 🚀 Getting Started
 

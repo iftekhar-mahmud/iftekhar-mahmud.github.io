@@ -1,367 +1,465 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Iftekhar Mahmud</title>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="mediaqueries.css" />
-    <link rel="icon" href="assets/meme.png" type="image/png">
-  </head>
-  <body>
-    <nav id="desktop-nav">
-      <div class="logo">Iftekhar Mahmud</div>
-      <div>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Iftekhar Mahmud</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="mediaqueries.css" />
+  <link rel="icon" href="assets/meme.png" type="image/png">
+</head>
+
+<body>
+  <nav id="desktop-nav">
+    <div class="logo">Iftekhar Mahmud</div>
+    <div>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#experience">Technical Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#research">Research</a></li>
+        <li><a href="#articles">Articles</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+  <nav id="hamburger-nav">
+    <div class="logo">Iftekhar Mahmud</div>
+    <div class="hamburger-menu">
+      <div class="hamburger-icon" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <div class="menu-links">
+        <li><a href="#about" onclick="toggleMenu()">About</a></li>
+        <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+        <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+        <li><a href="#research" onclick="toggleMenu()">Research</a></li>
+        <li><a href="#articles" onclick="toggleMenu()">Articles</a></li>
+        <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+      </div>
+    </div>
+  </nav>
+  <section id="profile">
+    <div class="section__pic-container">
+      <img src="./assets/profile-pic.jpg" alt="John Doe profile picture" />
+    </div>
+    <div class="section__text">
+      <p class="section__text__p1">Hello, I'm</p>
+      <h1 class="title">Iftekhar Mahmud</h1>
+      <p class="section__text__p2" id="role">Researcher</p>
+      <div class="btn-container">
+        <button class="btn btn-color-2" onclick="window.open('./assets/resume-example.pdf')">
+          Download CV
+        </button>
+
+      </div>
+      <div id="socials-container">
+        <a href="https://www.linkedin.com/in/iftekhar-tarif/" target="_blank">
+          <img src="./assets/linkedin.png" alt="My LinkedIn profile" class="icon" />
+        </a>
+        <a href="https://github.com/iftekhar-mahmud" target="_blank">
+          <img src="./assets/github.png" alt="My GitHub profile" class="icon" />
+        </a>
+        <a href="https://www.researchgate.net/profile/Iftekhar-Mahmud-4" target="_blank">
+          <img src="./assets/researchgate.png" alt="My ResearchGate profile" class="icon" />
+        </a>
+        <a href="https://www.kaggle.com/iftekhartarif" target="_blank">
+          <img src="./assets/kaggle.png" alt="My Kaggle profile" class="icon" />
+        </a>
+        <!-- New Social Links -->
+        <a href="https://medium.com/@mahmudtarif" target="_blank">
+          <img src="./assets/medium.png" alt="My Medium profile" class="icon" />
+        </a>
+        <a href="https://scholar.google.com/citations?user=sZv_fFQAAAAJ&hl=en" target="_blank">
+          <img src="./assets/google-scholar.png" alt="My Google Scholar profile" class="icon" />
+        </a>
+        <a href="https://www.youtube.com/@IftekharTarif" target="_blank">
+          <img src="./assets/youtube.png" alt="My YouTube channel" class="icon" />
+        </a>
+
+
+      </div>
+
+    </div>
+  </section>
+  <section id="about">
+    <p class="section__text__p1">Get To Know More</p>
+    <h1 class="title">About Me</h1>
+    <div class="section-container">
+      <div class="section__pic-container">
+        <img src="./assets/about-pic.jpg" alt="Profile picture" class="about-pic" />
+      </div>
+      <div class="about-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+
+            <img src="./assets/education.png" alt="Education icon" class="icon" />
+            <h3>Education</h3>
+            <p>B.Sc. in Computer Science and Engineering<br />United International University</p>
+          </div>
+          <div class="details-container">
+            <img src="./assets/experience.png" alt="Experience icon" class="icon" />
+            <h3>Research & Development</h3>
+            <p>Machine Learning & Deep Learning Projects<br />2 Peer-Reviewed Publications</p>
+          </div>
+        </div>
+        <div class="text-container">
+          <p>
+            I’m Iftekhar Mahmud, a passionate Computer Science graduate from United International University,
+            Bangladesh.
+            My academic journey has been enriched with hands-on projects in machine learning, data science, and web
+            development.
+            I’ve published research in IEEE conferences, including award-winning work in multimodal emotion recognition
+            and sustainable crop price forecasting.
+            I enjoy building practical solutions through data-driven models, and I’m particularly focused on Machine
+            Learning, Deep Learning, and Multi Modal Machine Learning.
+          </p>
+        </div>
+      </div>
+    </div>
+    <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#experience'" />
+  </section>
+  <section id="experience">
+    <p class="section__text__p1">Explore My</p>
+    <h1 class="title">Technical Skills</h1>
+    <div class="experience-details-container">
+      <div class="about-containers">
+
+        <!-- Development Section -->
+        <div class="details-container">
+          <h2 class="experience-sub-title">Development</h2>
+          <div class="article-container">
+            <article title="Programming Language">
+              <img src="./assets/checkmark.png" alt="icon" class="icon" />
+              <div>
+                <h3>Python</h3>
+                <p>Experienced</p>
+              </div>
+            </article>
+            <article title="Low-level & Competitive">
+              <img src="./assets/checkmark.png" alt="icon" class="icon" />
+              <div>
+                <h3>C/C++</h3>
+                <p>Experienced</p>
+              </div>
+            </article>
+            <article title="Web Backend Framework">
+              <img src="./assets/checkmark.png" alt="icon" class="icon" />
+              <div>
+                <h3>Laravel / PHP</h3>
+                <p>Intermediate</p>
+              </div>
+            </article>
+            <article title="Frontend Stack">
+              <img src="./assets/checkmark.png" alt="icon" class="icon" />
+              <div>
+                <h3>HTML / CSS / JS</h3>
+                <p>Intermediate</p>
+              </div>
+            </article>
+            <article title="Rapid Web Prototyping">
+              <img src="./assets/checkmark.png" alt="icon" class="icon" />
+              <div>
+                <h3>Streamlit</h3>
+                <p>Experienced</p>
+              </div>
+            </article>
+            <article title="Web Framework (Python)">
+              <img src="./assets/checkmark.png" alt="icon" class="icon" />
+              <div>
+                <h3>Django</h3>
+                <p>Intermediate</p>
+              </div>
+            </article>
+          </div>
+        </div>
+
+        <!-- Machine Learning Section -->
+        <div class="details-container">
+          <h2 class="experience-sub-title">Machine Learning</h2>
+          <div class="article-container">
+            <article title="Classic ML + Preprocessing">
+              <img src="./assets/checkmark.png" alt="icon" class="icon" />
+              <div>
+                <h3>Scikit-learn</h3>
+                <p>Experienced</p>
+              </div>
+            </article>
+            <article title="Deep Learning">
+              <img src="./assets/checkmark.png" alt="icon" class="icon" />
+              <div>
+                <h3>TensorFlow</h3>
+                <p>Intermediate</p>
+              </div>
+            </article>
+            <article title="Numerical Computation">
+              <img src="./assets/checkmark.png" alt="icon" class="icon" />
+              <div>
+                <h3>Pandas / NumPy</h3>
+                <p>Experienced</p>
+              </div>
+            </article>
+            <article title="Visualization Tool">
+              <img src="./assets/checkmark.png" alt="icon" class="icon" />
+              <div>
+                <h3>Matplotlib</h3>
+                <p>Experienced</p>
+              </div>
+            </article>
+          </div>
+        </div>
+
+        <!-- Tools Section -->
+        <div class="details-container">
+          <h2 class="experience-sub-title">Tools & Systems</h2>
+          <div class="article-container">
+            <article title="Version Control & Collaboration">
+              <img src="./assets/checkmark.png" alt="icon" class="icon" />
+              <div>
+                <h3>Git / GitHub</h3>
+                <p>Experienced</p>
+              </div>
+            </article>
+            <article title="IDE / Notebook">
+              <img src="./assets/checkmark.png" alt="icon" class="icon" />
+              <div>
+                <h3>VS Code / Jupyter</h3>
+                <p>Experienced</p>
+              </div>
+            </article>
+            <article title="Database Tooling">
+              <img src="./assets/checkmark.png" alt="icon" class="icon" />
+              <div>
+                <h3>DataGrip / SQL / PostgreSQL</h3>
+                <p>Intermediate</p>
+              </div>
+            </article>
+            <article title="Technical Writing">
+              <img src="./assets/checkmark.png" alt="icon" class="icon" />
+              <div>
+                <h3>LaTeX</h3>
+                <p>Experienced</p>
+              </div>
+            </article>
+            <article title="Operating Systems">
+              <img src="./assets/checkmark.png" alt="icon" class="icon" />
+              <div>
+                <h3>Linux / Windows</h3>
+                <p>Proficient</p>
+              </div>
+            </article>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section id="projects">
+    <p class="section__text__p1">Browse My Recent</p>
+    <h1 class="title">Projects</h1>
+
+    <div class="experience-details-container">
+
+      <!-- Row 1: 3 Projects -->
+      <div class="project-row">
+        <!-- Crop Price Prediction -->
+        <div class="details-container color-container">
+          <div class="article-container">
+            <img src="./assets/Crop Price Prediction.png" alt="Crop Price Prediction" class="project-img" />
+          </div>
+          <h2 class="experience-sub-title project-title">Crop Price Prediction</h2>
+          <div class="btn-container">
+            <button class="btn btn-color-2 project-btn"
+              onclick="window.open('https://github.com/iftekhar-mahmud/Crop-Price-Prediction', '_blank', 'noopener,noreferrer')">GitHub</button>
+          </div>
+        </div>
+
+        <!-- E-Clinic -->
+        <div class="details-container color-container">
+          <div class="article-container">
+            <img src="./assets/E-Clinic System.png" alt="E-Clinic" class="project-img" />
+          </div>
+          <h2 class="experience-sub-title project-title">E-Clinic System</h2>
+          <div class="btn-container">
+            <button class="btn btn-color-2 project-btn"
+              onclick="window.open('https://github.com/iftekhar-mahmud/E-Clinic', '_blank', 'noopener,noreferrer')">GitHub</button>
+          </div>
+        </div>
+
+        <!-- 2D Game -->
+        <div class="details-container color-container">
+          <div class="article-container">
+            <img src="./assets/2D Platformer Game.png" alt="2D Game Design" class="project-img" />
+          </div>
+          <h2 class="experience-sub-title project-title">2D Platformer Game</h2>
+          <div class="btn-container">
+            <button class="btn btn-color-2 project-btn"
+              onclick="window.open('https://github.com/iftekhar-mahmud/2D-Game-Design', '_blank', 'noopener,noreferrer')">GitHub</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Row 2: 2 Projects -->
+      <div class="project-row">
+        <!-- 3D Animation -->
+        <div class="details-container color-container">
+          <div class="article-container">
+            <img src="./assets/3D Animation with OpenGL.png" alt="3D Animation" class="project-img" />
+          </div>
+          <h2 class="experience-sub-title project-title">3D Animation with OpenGL</h2>
+          <div class="btn-container">
+            <button class="btn btn-color-2 project-btn"
+              onclick="window.open('https://github.com/iftekhar-mahmud/3D-Animation-opengl', '_blank', 'noopener,noreferrer')">GitHub</button>
+          </div>
+        </div>
+
+        <!-- E-Wholesale -->
+        <div class="details-container color-container">
+          <div class="article-container">
+            <img src="./assets/E-Wholesale System.png" alt="E-Wholesale" class="project-img" />
+          </div>
+          <h2 class="experience-sub-title project-title">E-Wholesale System</h2>
+          <div class="btn-container">
+            <button class="btn btn-color-2 project-btn"
+              onclick="window.open('https://github.com/iftekhar-mahmud/E-Wholesale-Management-System', '_blank', 'noopener,noreferrer')">GitHub</button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#contact'" />
+  </section>
+
+  <section id="research" class="research-section">
+    <p class="section__text__p1">My Academic</p>
+    <h1 class="title">Research Experience</h1>
+
+    <div class="experience-details-container">
+      <!-- Thesis Research Section -->
+      <div class="research-detail">
+        <h2 class="experience-sub-title">Undergraduate Thesis</h2>
+        <p class="research-info"><strong>Institution:</strong> United International University, Dhaka</p>
+        <p class="research-info"><strong>Duration:</strong> January 2024 - October 2024</p>
+        <p class="research-info"><strong>Title:</strong> Predicting Crop Prices using Machine Learning Algorithms for
+          Sustainable Agriculture</p>
+        <ul class="research-list">
+          <li>Explored regression and time series models for crop price forecasting.</li>
+          <li>Handled imbalanced datasets, trained ML models, and visualized outputs using Python libraries.</li>
+        </ul>
+        <p class="research-info"><strong>Publication:</strong></p>
+        <p class="research-info">
+          I. Mahmud, P. R. Das, M. H. Rahman, A. R. Hasan, K. I. Shahin, and D. M. Farid,<br />
+          <em>"Predicting Crop Prices using Machine Learning Algorithms for Sustainable Agriculture,"</em><br />
+          <em>2024 IEEE Region 10 Symposium (TENSYMP)</em>, New Delhi, India, 2024, pp. 1–6.<br />
+          <a href="https://doi.org/10.1109/TENSYMP61132.2024.10752263" target="_blank">DOI:
+            10.1109/TENSYMP61132.2024.10752263</a>
+        </p>
+        <p class="research-info"><strong>Journal Submission:</strong> Extended version is under preparation for a
+          peer-reviewed journal.</p>
+      </div>
+
+      <!-- Multimodal Emotion Recognition Section -->
+      <div class="research-detail">
+        <h2 class="experience-sub-title">Multimodal Emotion Recognition</h2>
+        <p class="research-info"><strong>Institution:</strong> United International University, Dhaka</p>
+        <p class="research-info"><strong>Duration:</strong> January 2024 - December 2024</p>
+        <ul class="research-list">
+          <li>Worked on emotion detection using visual and thermal images via deep learning.</li>
+          <li>Applied image processing, model fine-tuning, and evaluation techniques for optimal performance.</li>
+        </ul>
+        <p class="research-info"><strong>Publication:</strong></p>
+        <p class="research-info">
+          I. Mahmud, P. Das, N. Rifa, I. Hossain, R. Rahman, and D. M. Farid,<br />
+          <em>"Multimodal Emotion Recognition Using Visual and Thermal Image Fusion: A Deep Learning
+            Approach,"</em><br />
+          <em>27th International Conference on Computer and Information Technology (ICCIT)</em>, 2024.
+        </p>
+        <p class="research-info"><strong>Award:</strong> Best Technical Presentation Award, IEEE ICCIT 2024</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="articles">
+    <p class="section__text__p1">Read My</p>
+    <h1 class="title">Articles</h1>
+    <div class="experience-details-container">
+      <div class="about-containers">
+
+        <div class="details-container">
+          <h2 class="experience-sub-title">Latest on Medium</h2>
+          <div class="article-container">
+
+            <!-- Updated article structure -->
+            <div class="article-card">
+              <img src="./assets/medium.png" alt="Medium icon" class="article-icon" />
+              <div>
+                <h3>
+                  <a href="https://medium.com/@mahmudtarif/rockefellers-enigma-and-islam-s-clear-stance-on-cannibalism-c2d35f036f6d" target="_blank">
+                    Rockefeller’s Enigma & Islam’s Clear Stance on Cannibalism
+                  </a>
+                </h3>
+                <p>A deep dive into an eerie historical anecdote and how Islam ethically confronts such extremes.</p>
+              </div>
+            </div>
+
+            <div class="article-card">
+              <img src="./assets/medium.png" alt="Medium icon" class="article-icon" />
+              <div>
+                <h3>
+                  <a href="https://medium.com/@mahmudtarif/from-command-to-control-how-agentic-ai-is-taking-the-wheel-a82ef2212245" target="_blank">
+                    From Command to Control: How Agentic AI is Taking the Wheel
+                  </a>
+                </h3>
+                <p>Explores the philosophical and practical implications of agentic AI systems gaining autonomy.</p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#contact'" />
+  </section>
+
+  
+
+  <section id="contact">
+    <p class="section__text__p1">Get in Touch</p>
+    <h1 class="title">Contact Me</h1>
+    <div class="contact-info-upper-container">
+      <div class="contact-info-container">
+        <img src="./assets/email.png" alt="Email icon" class="icon contact-icon email-icon" />
+        <p><a href="mailto:examplemail@gmail.com">mahmudtarif@gmail.com</a></p>
+      </div>
+      <div class="contact-info-container">
+        <img src="./assets/linkedin.png" alt="LinkedIn icon" class="icon contact-icon" />
+        <p><a href="https://www.linkedin.com/in/iftekhar-tarif/">LinkedIn</a></p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <nav>
+      <div class="nav-links-container">
         <ul class="nav-links">
           <li><a href="#about">About</a></li>
-          <li><a href="#experience">Technical Skills</a></li>
+          <li><a href="#experience">Experience</a></li>
           <li><a href="#projects">Projects</a></li>
           <li><a href="#research">Research</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
       </div>
     </nav>
-    <nav id="hamburger-nav">
-      <div class="logo">Iftekhar Mahmud</div>
-      <div class="hamburger-menu">
-        <div class="hamburger-icon" onclick="toggleMenu()">
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
-        <div class="menu-links">
-          <li><a href="#about" onclick="toggleMenu()">About</a></li>
-          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
-          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
-          <li><a href="#research" onclick="toggleMenu()">Research</a></li>
-          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
-        </div>
-      </div>
-    </nav>
-    <section id="profile">
-      <div class="section__pic-container">
-        <img src="./assets/profile-pic.jpg" alt="John Doe profile picture" />
-      </div>
-      <div class="section__text">
-        <p class="section__text__p1">Hello, I'm</p>
-        <h1 class="title">Iftekhar Mahmud</h1>
-        <p class="section__text__p2" id="role">Researcher</p>
-        <div class="btn-container">
-          <button
-            class="btn btn-color-2"
-            onclick="window.open('./assets/resume-example.pdf')"
-          >
-            Download CV
-          </button>
-          
-        </div>
-        <div id="socials-container">
-          <a href="https://www.linkedin.com/in/iftekhar-tarif/" target="_blank">
-            <img src="./assets/linkedin.png" alt="My LinkedIn profile" class="icon" />
-          </a>
-          <a href="https://github.com/iftekhar-mahmud" target="_blank">
-            <img src="./assets/github.png" alt="My GitHub profile" class="icon" />
-          </a>
-        </div>
-             
-      </div>
-    </section>
-    <section id="about">
-      <p class="section__text__p1">Get To Know More</p>
-      <h1 class="title">About Me</h1>
-      <div class="section-container">
-        <div class="section__pic-container">
-          <img
-            src="./assets/about-pic.jpg"
-            alt="Profile picture"
-            class="about-pic"
-          />
-        </div>
-        <div class="about-details-container">
-          <div class="about-containers">
-            <div class="details-container">
-              
-              <img
-                src="./assets/education.png"
-                alt="Education icon"
-                class="icon"
-              />
-              <h3>Education</h3>
-              <p>B.Sc. in Computer Science and Engineering<br />United International University</p>
-            </div>
-            <div class="details-container">
-              <img
-                src="./assets/experience.png"
-                alt="Experience icon"
-                class="icon"
-              />
-              <h3>Research & Development</h3>
-              <p>Machine Learning & Deep Learning Projects<br />2 Peer-Reviewed Publications</p>
-            </div>
-          </div>
-          <div class="text-container">
-            <p>
-              I’m Iftekhar Mahmud, a passionate Computer Science graduate from United International University, Bangladesh.
-              My academic journey has been enriched with hands-on projects in machine learning, data science, and web development.
-              I’ve published research in IEEE conferences, including award-winning work in multimodal emotion recognition and sustainable crop price forecasting.
-              I enjoy building practical solutions through data-driven models, and I’m particularly focused on Machine Learning, Deep Learning, and Multi Modal Machine Learning.
-            </p>
-          </div>
-        </div>
-      </div>
-      <img
-        src="./assets/arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='./#experience'"
-      />
-    </section>
-    <section id="experience">
-      <p class="section__text__p1">Explore My</p>
-      <h1 class="title">Technical Skills</h1>
-      <div class="experience-details-container">
-        <div class="about-containers">
-    
-          <!-- Development Section -->
-          <div class="details-container">
-            <h2 class="experience-sub-title">Development</h2>
-            <div class="article-container">
-              <article title="Programming Language">
-                <img src="./assets/checkmark.png" alt="icon" class="icon" />
-                <div><h3>Python</h3><p>Experienced</p></div>
-              </article>
-              <article title="Low-level & Competitive">
-                <img src="./assets/checkmark.png" alt="icon" class="icon" />
-                <div><h3>C/C++</h3><p>Experienced</p></div>
-              </article>
-              <article title="Web Backend Framework">
-                <img src="./assets/checkmark.png" alt="icon" class="icon" />
-                <div><h3>Laravel / PHP</h3><p>Intermediate</p></div>
-              </article>
-              <article title="Frontend Stack">
-                <img src="./assets/checkmark.png" alt="icon" class="icon" />
-                <div><h3>HTML / CSS / JS</h3><p>Intermediate</p></div>
-              </article>
-              <article title="Rapid Web Prototyping">
-                <img src="./assets/checkmark.png" alt="icon" class="icon" />
-                <div><h3>Streamlit</h3><p>Experienced</p></div>
-              </article>
-              <article title="Web Framework (Python)">
-                <img src="./assets/checkmark.png" alt="icon" class="icon" />
-                <div><h3>Django</h3><p>Intermediate</p></div>
-              </article>
-            </div>
-          </div>
-    
-          <!-- Machine Learning Section -->
-          <div class="details-container">
-            <h2 class="experience-sub-title">Machine Learning</h2>
-            <div class="article-container">
-              <article title="Classic ML + Preprocessing">
-                <img src="./assets/checkmark.png" alt="icon" class="icon" />
-                <div><h3>Scikit-learn</h3><p>Experienced</p></div>
-              </article>
-              <article title="Deep Learning">
-                <img src="./assets/checkmark.png" alt="icon" class="icon" />
-                <div><h3>TensorFlow</h3><p>Intermediate</p></div>
-              </article>
-              <article title="Numerical Computation">
-                <img src="./assets/checkmark.png" alt="icon" class="icon" />
-                <div><h3>Pandas / NumPy</h3><p>Experienced</p></div>
-              </article>
-              <article title="Visualization Tool">
-                <img src="./assets/checkmark.png" alt="icon" class="icon" />
-                <div><h3>Matplotlib</h3><p>Experienced</p></div>
-              </article>
-            </div>
-          </div>
-    
-          <!-- Tools Section -->
-          <div class="details-container">
-            <h2 class="experience-sub-title">Tools & Systems</h2>
-            <div class="article-container">
-              <article title="Version Control & Collaboration">
-                <img src="./assets/checkmark.png" alt="icon" class="icon" />
-                <div><h3>Git / GitHub</h3><p>Experienced</p></div>
-              </article>
-              <article title="IDE / Notebook">
-                <img src="./assets/checkmark.png" alt="icon" class="icon" />
-                <div><h3>VS Code / Jupyter</h3><p>Experienced</p></div>
-              </article>
-              <article title="Database Tooling">
-                <img src="./assets/checkmark.png" alt="icon" class="icon" />
-                <div><h3>DataGrip / SQL / PostgreSQL</h3><p>Intermediate</p></div>
-              </article>
-              <article title="Technical Writing">
-                <img src="./assets/checkmark.png" alt="icon" class="icon" />
-                <div><h3>LaTeX</h3><p>Experienced</p></div>
-              </article>
-              <article title="Operating Systems">
-                <img src="./assets/checkmark.png" alt="icon" class="icon" />
-                <div><h3>Linux / Windows</h3><p>Proficient</p></div>
-              </article>
-            </div>
-          </div>
-    
-        </div>
-      </div>
-    </section>
-             
-    <section id="projects">
-      <p class="section__text__p1">Browse My Recent</p>
-      <h1 class="title">Projects</h1>
-    
-      <div class="experience-details-container">
-    
-        <!-- Row 1: 3 Projects -->
-        <div class="project-row">
-          <!-- Crop Price Prediction -->
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img src="./assets/Crop Price Prediction.png" alt="Crop Price Prediction" class="project-img" />
-            </div>
-            <h2 class="experience-sub-title project-title">Crop Price Prediction</h2>
-            <div class="btn-container">
-              <button class="btn btn-color-2 project-btn" onclick="window.open('https://github.com/iftekhar-mahmud/Crop-Price-Prediction', '_blank', 'noopener,noreferrer')">GitHub</button>
-            </div>
-          </div>
-    
-          <!-- E-Clinic -->
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img src="./assets/E-Clinic System.png" alt="E-Clinic" class="project-img" />
-            </div>
-            <h2 class="experience-sub-title project-title">E-Clinic System</h2>
-            <div class="btn-container">
-              <button class="btn btn-color-2 project-btn" onclick="window.open('https://github.com/iftekhar-mahmud/E-Clinic', '_blank', 'noopener,noreferrer')">GitHub</button>
-            </div>
-          </div>
-    
-          <!-- 2D Game -->
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img src="./assets/2D Platformer Game.png" alt="2D Game Design" class="project-img" />
-            </div>
-            <h2 class="experience-sub-title project-title">2D Platformer Game</h2>
-            <div class="btn-container">
-              <button class="btn btn-color-2 project-btn" onclick="window.open('https://github.com/iftekhar-mahmud/2D-Game-Design', '_blank', 'noopener,noreferrer')">GitHub</button>
-            </div>
-          </div>
-        </div>
-    
-        <!-- Row 2: 2 Projects -->
-        <div class="project-row">
-          <!-- 3D Animation -->
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img src="./assets/3D Animation with OpenGL.png" alt="3D Animation" class="project-img" />
-            </div>
-            <h2 class="experience-sub-title project-title">3D Animation with OpenGL</h2>
-            <div class="btn-container">
-              <button class="btn btn-color-2 project-btn" onclick="window.open('https://github.com/iftekhar-mahmud/3D-Animation-opengl', '_blank', 'noopener,noreferrer')">GitHub</button>
-            </div>
-          </div>
-    
-          <!-- E-Wholesale -->
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img src="./assets/E-Wholesale System.png" alt="E-Wholesale" class="project-img" />
-            </div>
-            <h2 class="experience-sub-title project-title">E-Wholesale System</h2>
-            <div class="btn-container">
-              <button class="btn btn-color-2 project-btn" onclick="window.open('https://github.com/iftekhar-mahmud/E-Wholesale-Management-System', '_blank', 'noopener,noreferrer')">GitHub</button>
-            </div>
-          </div>
-        </div>
-    
-      </div>
-    
-      <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#contact'" />
-    </section>
-    
-    <section id="research" class="research-section">
-      <p class="section__text__p1">My Academic</p>
-      <h1 class="title">Research Experience</h1>
-      
-      <div class="experience-details-container">
-        <!-- Thesis Research Section -->
-        <div class="research-detail">
-          <h2 class="experience-sub-title">Undergraduate Thesis</h2>
-          <p class="research-info"><strong>Institution:</strong> United International University, Dhaka</p>
-          <p class="research-info"><strong>Duration:</strong> January 2024 - October 2024</p>
-          <p class="research-info"><strong>Title:</strong> Predicting Crop Prices using Machine Learning Algorithms for Sustainable Agriculture</p>
-          <ul class="research-list">
-            <li>Explored regression and time series models for crop price forecasting.</li>
-            <li>Handled imbalanced datasets, trained ML models, and visualized outputs using Python libraries.</li>
-          </ul>
-          <p class="research-info"><strong>Publication:</strong></p>
-          <p class="research-info">
-            I. Mahmud, P. R. Das, M. H. Rahman, A. R. Hasan, K. I. Shahin, and D. M. Farid,<br />
-            <em>"Predicting Crop Prices using Machine Learning Algorithms for Sustainable Agriculture,"</em><br />
-            <em>2024 IEEE Region 10 Symposium (TENSYMP)</em>, New Delhi, India, 2024, pp. 1–6.<br />
-            <a href="https://doi.org/10.1109/TENSYMP61132.2024.10752263" target="_blank">DOI: 10.1109/TENSYMP61132.2024.10752263</a>
-          </p>
-          <p class="research-info"><strong>Journal Submission:</strong> Extended version is under preparation for a peer-reviewed journal.</p>
-        </div>
-    
-        <!-- Multimodal Emotion Recognition Section -->
-        <div class="research-detail">
-          <h2 class="experience-sub-title">Multimodal Emotion Recognition</h2>
-          <p class="research-info"><strong>Institution:</strong> United International University, Dhaka</p>
-          <p class="research-info"><strong>Duration:</strong> January 2024 - December 2024</p>
-          <ul class="research-list">
-            <li>Worked on emotion detection using visual and thermal images via deep learning.</li>
-            <li>Applied image processing, model fine-tuning, and evaluation techniques for optimal performance.</li>
-          </ul>
-          <p class="research-info"><strong>Publication:</strong></p>
-          <p class="research-info">
-            I. Mahmud, P. Das, N. Rifa, I. Hossain, R. Rahman, and D. M. Farid,<br />
-            <em>"Multimodal Emotion Recognition Using Visual and Thermal Image Fusion: A Deep Learning Approach,"</em><br />
-            <em>27th International Conference on Computer and Information Technology (ICCIT)</em>, 2024.
-          </p>
-          <p class="research-info"><strong>Award:</strong> Best Technical Presentation Award, IEEE ICCIT 2024</p>
-        </div>
-      </div>
-    </section>
-       
-    <section id="contact">
-      <p class="section__text__p1">Get in Touch</p>
-      <h1 class="title">Contact Me</h1>
-      <div class="contact-info-upper-container">
-        <div class="contact-info-container">
-          <img
-            src="./assets/email.png"
-            alt="Email icon"
-            class="icon contact-icon email-icon"
-          />
-          <p><a href="mailto:examplemail@gmail.com">mahmudtarif@gmail.com</a></p>
-        </div>
-        <div class="contact-info-container">
-          <img
-            src="./assets/linkedin.png"
-            alt="LinkedIn icon"
-            class="icon contact-icon"
-          />
-          <p><a href="https://www.linkedin.com/in/iftekhar-tarif/">LinkedIn</a></p>
-        </div>
-      </div>
-    </section>
-    
-    <footer>
-      <nav>
-        <div class="nav-links-container">
-          <ul class="nav-links">
-            <li><a href="#about">About</a></li>
-            <li><a href="#experience">Experience</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#research">Research</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
-        </div>
-      </nav>
-      <p>Copyright &#169; 2025 Iftekhar Mahmud. All Rights Reserved.</p>
-    </footer>
-    <script src="script.js"></script>
-  </body>
+    <p>Copyright &#169; 2025 Iftekhar Mahmud. All Rights Reserved.</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+
 </html>

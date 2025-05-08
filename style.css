@@ -491,3 +491,58 @@ a:hover {
   text-decoration: underline;
 }
 
+/* Scoped Articles Section */
+#articles {
+  padding: 6rem 2rem;
+  background-color: #f9f9f9;
+}
+
+#articles .article-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding-top: 2rem;
+}
+
+#articles .article-card {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  background-color: #fff;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+#articles .article-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+}
+
+#articles .article-icon {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+  margin-top: 4px;
+}
+
+#articles .article-card h3 {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+#articles .article-card a {
+  color: #333;
+  text-decoration: none;
+}
+
+#articles .article-card a:hover {
+  text-decoration: underline;
+}
+
+#articles .article-card p {
+  margin: 0;
+  color: #555;
+  line-height: 1.4;
+}

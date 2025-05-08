@@ -538,7 +538,7 @@ a:hover {
 }
 
 #articles .article-card a:hover {
-  text-decoration: underline;
+  text-decoration: none;
 }
 
 #articles .article-card p {

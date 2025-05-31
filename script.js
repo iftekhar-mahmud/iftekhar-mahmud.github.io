@@ -3,7 +3,9 @@ function toggleMenu() {
   const icon = document.querySelector(".hamburger-icon");
   menu.classList.toggle("open");
   icon.classList.toggle("open");
+  console.log("Menu toggled:", menu.classList.contains("open"));
 }
+
 
 
 const roles = ['CSE Graduate', 'Data Analyst', 'Writer', 'Software Engineer'];
@@ -22,3 +24,20 @@ function changeRole() {
 
 // Change the role every 3 seconds
 setInterval(changeRole, 3000);  
+
+const menu = document.getElementById("menu-links");
+const icon = document.getElementById("hamburger-icon");
+
+// Toggle menu open/close on hamburger icon click
+icon.addEventListener("click", () => {
+  menu.classList.toggle("open");
+  icon.classList.toggle("open");
+});
+
+// Close menu when clicking any menu link
+menu.querySelectorAll("a").forEach(link => {
+  link.addEventListener("click", () => {
+    menu.classList.remove("open");
+    icon.classList.remove("open");
+  });
+});

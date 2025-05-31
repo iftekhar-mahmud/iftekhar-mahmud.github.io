@@ -14,11 +14,12 @@
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-LWFSZ1HPW8"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
+  function gtag() { dataLayer.push(arguments); }
   gtag('js', new Date());
 
   gtag('config', 'G-LWFSZ1HPW8');
 </script>
+
 <body>
   <nav id="desktop-nav">
     <div class="logo">Iftekhar Mahmud</div>
@@ -34,23 +35,26 @@
     </div>
   </nav>
   <nav id="hamburger-nav">
-    <div class="logo">Iftekhar Mahmud</div>
-    <div class="hamburger-menu">
-      <div class="hamburger-icon" onclick="toggleMenu()">
-        <span></span>
-        <span></span>
-        <span></span>
-      </div>
-      <div class="menu-links">
-        <li><a href="#about" onclick="toggleMenu()">About</a></li>
-        <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
-        <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
-        <li><a href="#research" onclick="toggleMenu()">Research</a></li>
-        <li><a href="#articles" onclick="toggleMenu()">Articles</a></li>
-        <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
-      </div>
+  <div class="logo">Iftekhar Mahmud</div>
+  <div class="hamburger-menu">
+    <div class="hamburger-icon" id="hamburger-icon">
+      <span></span>
+      <span></span>
+      <span></span>
     </div>
-  </nav>
+    <div class="menu-links" id="menu-links">
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#research">Research</a></li>
+        <li><a href="#articles">Articles</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
   <section id="profile">
     <div class="section__pic-container">
       <img src="./assets/profile-pic.jpg" alt="John Doe profile picture" />
@@ -131,50 +135,50 @@
     </div>
     <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#experience'" />
   </section>
- <section id="skills">
-  <p class="section__text__p1">What I Work With</p>
-  <h1 class="title">Technical Skillset</h1>
+  <section id="skills">
+    <p class="section__text__p1">What I Work With</p>
+    <h1 class="title">Technical Skillset</h1>
 
-  <div class="skills-grid">
+    <div class="skills-grid">
 
-    <!-- Development -->
-    <div class="skill-card">
-      <h2>Programming & Web</h2>
-      <ul>
-        <li><strong>Python</strong> — Advanced</li>
-        <li><strong>C/C++</strong> — Strong Foundation</li>
-        <li><strong>HTML / CSS / JavaScript</strong> — Intermediate</li>
-        <li><strong>Laravel (PHP)</strong> — Intermediate</li>
-        <li><strong>Django</strong> — Intermediate</li>
-        <li><strong>Streamlit</strong> — Advanced (Rapid Prototyping)</li>
-      </ul>
+      <!-- Development -->
+      <div class="skill-card">
+        <h2>Programming & Web</h2>
+        <ul>
+          <li><strong>Python</strong> — Advanced</li>
+          <li><strong>C/C++</strong> — Strong Foundation</li>
+          <li><strong>HTML / CSS / JavaScript</strong> — Intermediate</li>
+          <li><strong>Laravel (PHP)</strong> — Intermediate</li>
+          <li><strong>Django</strong> — Intermediate</li>
+          <li><strong>Streamlit</strong> — Advanced (Rapid Prototyping)</li>
+        </ul>
+      </div>
+
+      <!-- Machine Learning -->
+      <div class="skill-card">
+        <h2>Data & ML</h2>
+        <ul>
+          <li><strong>Scikit-learn</strong> — Classical ML & Preprocessing</li>
+          <li><strong>TensorFlow</strong> — Deep Learning & Neural Nets</li>
+          <li><strong>Pandas / NumPy</strong> — Data Manipulation</li>
+          <li><strong>Matplotlib</strong> — Visualization</li>
+        </ul>
+      </div>
+
+      <!-- Tools -->
+      <div class="skill-card">
+        <h2>Tools & Environment</h2>
+        <ul>
+          <li><strong>Git / GitHub</strong> — Version Control</li>
+          <li><strong>VS Code / Jupyter</strong> — IDE & Notebooks</li>
+          <li><strong>SQL / PostgreSQL / DataGrip</strong> — Databases</li>
+          <li><strong>LaTeX</strong> — Documentation & Technical Writing</li>
+          <li><strong>Linux / Windows</strong> — Comfortable in Both</li>
+        </ul>
+      </div>
+
     </div>
-
-    <!-- Machine Learning -->
-    <div class="skill-card">
-      <h2>Data & ML</h2>
-      <ul>
-        <li><strong>Scikit-learn</strong> — Classical ML & Preprocessing</li>
-        <li><strong>TensorFlow</strong> — Deep Learning & Neural Nets</li>
-        <li><strong>Pandas / NumPy</strong> — Data Manipulation</li>
-        <li><strong>Matplotlib</strong> — Visualization</li>
-      </ul>
-    </div>
-
-    <!-- Tools -->
-    <div class="skill-card">
-      <h2>Tools & Environment</h2>
-      <ul>
-        <li><strong>Git / GitHub</strong> — Version Control</li>
-        <li><strong>VS Code / Jupyter</strong> — IDE & Notebooks</li>
-        <li><strong>SQL / PostgreSQL / DataGrip</strong> — Databases</li>
-        <li><strong>LaTeX</strong> — Documentation & Technical Writing</li>
-        <li><strong>Linux / Windows</strong> — Comfortable in Both</li>
-      </ul>
-    </div>
-
-  </div>
-</section>
+  </section>
 
 
   <section id="projects">
@@ -318,7 +322,8 @@
               <img src="./assets/medium.png" alt="Medium icon" class="article-icon" />
               <div>
                 <h3>
-                  <a href="https://medium.com/@mahmudtarif/rockefellers-enigma-and-islam-s-clear-stance-on-cannibalism-c2d35f036f6d" target="_blank">
+                  <a href="https://medium.com/@mahmudtarif/rockefellers-enigma-and-islam-s-clear-stance-on-cannibalism-c2d35f036f6d"
+                    target="_blank">
                     Rockefeller’s Enigma & Islam’s Clear Stance on Cannibalism
                   </a>
                 </h3>
@@ -330,7 +335,8 @@
               <img src="./assets/medium.png" alt="Medium icon" class="article-icon" />
               <div>
                 <h3>
-                  <a href="https://medium.com/@mahmudtarif/from-command-to-control-how-agentic-ai-is-taking-the-wheel-a82ef2212245" target="_blank">
+                  <a href="https://medium.com/@mahmudtarif/from-command-to-control-how-agentic-ai-is-taking-the-wheel-a82ef2212245"
+                    target="_blank">
                     From Command to Control: How Agentic AI is Taking the Wheel
                   </a>
                 </h3>
@@ -346,7 +352,7 @@
     <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#contact'" />
   </section>
 
-  
+
 
   <section id="contact">
     <p class="section__text__p1">Get in Touch</p>
@@ -383,6 +389,25 @@
     <p>Copyright &#169; 2025 Iftekhar Mahmud. All Rights Reserved.</p>
   </footer>
   <script src="script.js"></script>
+  <button id="scrollToTopBtn" title="Go to top">↑</button>
+  <script>
+  // Show button after scrolling 300px
+  window.onscroll = function () {
+    const btn = document.getElementById("scrollToTopBtn");
+    if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+      btn.style.display = "block";
+    } else {
+      btn.style.display = "none";
+    }
+  };
+
+  // Scroll to top smoothly
+  document.getElementById("scrollToTopBtn").addEventListener("click", function () {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  });
+</script>
+
+
 </body>
 
 </html>

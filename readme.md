@@ -25,7 +25,7 @@ Explore the live version:
 - **Academic Highlights** – Detailed sections on academic achievements and research projects.
 - **Interactive Elements** – Engaging UI components to enhance user experience.
 - **Downloadable CV** – A downloadable version of my resume will be available soon.  
-  Feel free to [email me](mailto:iftekhar.mahmud.cse@gmail.com) or message me on [LinkedIn](https://www.linkedin.com/in/iftekharmahmud/) for the most recent version.
+  Feel free to [email me](mailto:mahmudtarif@gmail.com) or message me on [LinkedIn](https://www.linkedin.com/in/iftekhar-tarif/) for the most recent version.
 
 ## 📄 License
 

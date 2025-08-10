@@ -271,12 +271,14 @@ section {
 
 #about {
   position: relative;
+  margin-bottom: 60px;
 }
 
 .about-containers {
   gap: 2rem;
   margin-bottom: 2rem;
   margin-top: 2rem;
+  
 }
 
 .about-details-container {
@@ -293,11 +295,17 @@ section {
   border-radius: 2rem;
 }
 
+/* ARROW ICON */
 .arrow {
   position: absolute;
   right: -5rem;
   bottom: 2.5rem;
+  cursor: pointer; 
+  width: 40px;     
+  height: auto;
 }
+
+
 
 .details-container {
   padding: 1.5rem;
@@ -363,6 +371,7 @@ article .icon {
 
 #projects {
   position: relative;
+  margin-bottom: 60px;
 }
 
 .color-container {
@@ -452,9 +461,11 @@ footer p {
   margin-bottom: 3rem;
 }
 
+/* RESEARCH SECTION */
 .research-section {
   padding: 40px 20px;
   background-color: #f4f4f4;
+  margin-bottom: 60px;
 }
 
 .title {
@@ -498,6 +509,11 @@ a:hover {
 }
 
 /* Scoped Articles Section */
+section#articles {
+  position: relative;
+  background-color: #f9f9f9;
+}
+
 #articles {
   padding: 6rem 2rem;
   background-color: #f9f9f9;
@@ -553,10 +569,13 @@ a:hover {
   line-height: 1.4;
 }
 
+
+/* SKILLS SECTION */
 #skills {
   padding: 2rem;
   background-color: #f8f9fa;
   text-align: center;
+  margin-bottom: 60px;
 }
 
 .skills-grid {

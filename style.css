@@ -6,6 +6,9 @@
   margin: 0;
   padding: 0;
 }
+body, html {
+  background-color: #e8eaf0; /* soft bluish-gray */
+}
 
 body {
   font-family: "Poppins", sans-serif;
@@ -155,16 +158,28 @@ a:hover {
 /* SECTIONS */
 
 section {
-  padding-top: 4vh;
-  height: 96vh;
-  margin: 0 10rem;
+  padding: 4vh 3rem;          /* vertical + horizontal padding */
+  min-height: 66vh;           /* flexible minimum height */
+  margin: 2rem 10rem;         /* spacing from page edges */
   box-sizing: border-box;
-  min-height: fit-content;
+  border-radius: 1.5rem;      /* rounded corners */
+  background-color: #ffffff;  /* light neutral background */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08); /* subtle shadow */
+  border: 1px solid rgba(0,0,0,0.05); /* very subtle */
 }
+
 
 .section-container {
   display: flex;
 }
+
+#profile { background-color: #ffffff; }        /* clean white for first impression */
+#about { background-color: #f7f8fa; }          /* very light gray-blue for subtle contrast */
+#experience { background-color: #ffffff; }     /* white keeps content readable */
+#projects { background-color: #f4f6fb; }       /* soft bluish tint to separate visually */
+#skills { background-color: #ffffff; }         /* keep it crisp and clean */
+#certifications { background-color: #f7f8fa; } /* subtle contrast, matches About section */
+#contact { background-color: #ffffff; }
 
 /* PROFILE SECTION */
 
@@ -638,4 +653,26 @@ section#articles {
 
 #scrollToTopBtn:hover {
   background-color: #555;
+}
+
+/* CERTIFICATIONS SECTION */
+#certifications {
+  text-align: center;
+  padding: 30px 0 10px 0; /* top and bottom padding */
+}
+
+/* Section headings */
+#certifications h1,
+#certifications h2,
+#certifications p {
+  margin: 0 0 5px 0; /* small spacing below */
+}
+
+/* Badge grid */
+.badge-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 20px;
+  justify-items: center;
+  padding: 10px 0;
 }

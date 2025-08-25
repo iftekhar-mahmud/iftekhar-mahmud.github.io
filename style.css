@@ -675,4 +675,45 @@ section#articles {
   gap: 20px;
   justify-items: center;
   padding: 10px 0;
+  
+}
+
+.coursera-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.coursera-card {
+  display: block;
+  background: #ffffff;
+  border: 1px solid rgba(0,0,0,0.08);
+  border-radius: 1rem;
+  padding: 15px 20px;
+  text-align: left;
+  text-decoration: none;
+  color: #333;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.coursera-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 4px 14px rgba(0,0,0,0.1);
+  text-decoration: none !important; /* remove underline */
+  color: inherit; /* keep text color stable */
+}
+
+.coursera-card h3 {
+  margin: 0 0 5px 0;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.coursera-card p {
+  margin: 0;
+  font-size: 0.9rem;
+  color: #666;
+  text-decoration: none !important;
 }

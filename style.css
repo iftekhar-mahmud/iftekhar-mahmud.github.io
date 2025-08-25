@@ -492,6 +492,34 @@ article .icon {
   height: 2.5rem;
 }
 
+@media (max-width: 900px) {
+  #contact .contact-info-upper-container {
+    flex-direction: column;  /* stack all contact items vertically */
+    padding: 1rem;
+    width: 90%;
+    margin: 1rem auto;
+  }
+
+  #contact .contact-info-container {
+    flex-direction: row;       /* keep icon + text in a row */
+    flex-wrap: wrap;           /* allow text to wrap */
+    align-items: center;       /* vertically center icon with text */
+    gap: 0.5rem;
+    margin-bottom: 1rem;       /* space between each contact row */
+  }
+
+  #contact .contact-info-container p {
+    font-size: 1rem;
+    word-break: break-word;    /* allow long email to wrap */
+    text-align: left;
+    flex: 1;                   /* take remaining width next to icon */
+  }
+
+  #contact .contact-icon {
+    flex-shrink: 0;            /* icon keeps its size */
+  }
+}
+
 /* FOOTER SECTION */
 
 footer {
@@ -736,6 +764,52 @@ section#articles {
   box-shadow: 0 6px 16px rgba(0,0,0,0.1);
 }
 
+@media (max-width: 900px) {
+  /* Make container full width and reduce padding/margin */
+  #certifications .details-container {
+    width: 100% !important;
+    margin: 0 !important;
+    padding: 10px !important; /* optional, smaller padding */
+    box-sizing: border-box;
+  }
+
+  #certifications .about-containers,
+  #certifications .experience-details-container {
+    width: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+
+  /* Optional: smaller gap between items */
+  #certifications .badge-grid,
+  #certifications .coursera-grid {
+    gap: 10px !important;
+  }
+
+  /* Make badge-grid swipeable on mobile */
+  #certifications .badge-grid {
+    display: flex !important;
+    flex-wrap: nowrap !important;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  #certifications .badge-grid .badge-wrapper {
+    flex: 0 0 auto;
+    min-width: 160px; /* keep the badge width */
+  }
+
+  /* Coursera grid stays a normal grid */
+  #certifications .coursera-grid {
+    display: grid !important;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)) !important;
+    overflow-x: visible !important;
+    flex-wrap: unset !important;
+  }
+}
+
+
+/* COURSERA SECTION */
 .coursera-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));

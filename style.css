@@ -208,6 +208,7 @@ section {
   background-color: #ffffff;  /* light neutral background */
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08); /* subtle shadow */
   border: 1px solid rgba(0,0,0,0.05); /* very subtle */
+  margin-bottom: 4rem !important;
 }
 
 
@@ -230,6 +231,47 @@ section {
   justify-content: center;
   gap: 5rem;
   height: 80vh;
+  margin-bottom: 4rem !important;
+}
+
+/* Mobile fix */
+@media (max-width: 900px) {
+#profile {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    height: auto !important;
+    min-height: unset !important;
+    padding: 2rem 1rem;
+    gap: 2rem;
+    margin-bottom: 4rem !important; 
+  }
+
+  .section__pic-container {
+    height: auto !important;
+    width: 220px !important;   /* keeps it reasonably small */
+    max-width: 80%;
+    margin: 0 auto;
+  }
+
+  .section__pic-container img {
+    width: 100%;
+    height: auto;
+    border-radius: 50%;        /* optional: keep circular look */
+    object-fit: cover;
+  }
+
+  .section__text {
+    height: auto !important;
+  }
+
+  .title {
+    font-size: 2.2rem;           /* smaller heading on mobile */
+  }
+
+  .section__text__p2 {
+    font-size: 1.4rem;
+  }
 }
 
 .section__pic-container {

@@ -248,17 +248,16 @@ section {
   }
 
   .section__pic-container {
-    height: auto !important;
-    width: 220px !important;   /* keeps it reasonably small */
-    max-width: 80%;
-    margin: 0 auto;
+     display: flex;
+  width: 450px;     /* larger image area */
+  height: auto;     /* adjust naturally */
+  margin: auto 0;
   }
 
   .section__pic-container img {
-    width: 100%;
-    height: auto;
-    border-radius: 50%;        /* optional: keep circular look */
-    object-fit: cover;
+     width: 100%;
+  height: auto;
+  border-radius: 20px;
   }
 
   .section__text {

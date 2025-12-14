@@ -1,3 +1,4 @@
+this is my css : 
 /* GENERAL */
 
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
@@ -6,11 +7,8 @@
   margin: 0;
   padding: 0;
 }
-
-body,
-html {
-  background-color: #e8eaf0;
-  /* soft bluish-gray */
+body, html {
+  background-color: #e8eaf0; /* soft bluish-gray */
 }
 
 body {
@@ -60,12 +58,9 @@ a {
 }
 
 a:hover {
-  color: #666;
-  /* soft gray for gentle contrast */
-  transform: translateY(-1.5px);
-  /* subtle lift */
-  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
-  /* very soft shadow */
+  color: #666;                      /* soft gray for gentle contrast */
+  transform: translateY(-1.5px);    /* subtle lift */
+  text-shadow: 0 1px 3px rgba(0,0,0,0.04); /* very soft shadow */
   text-decoration: none !important;
 }
 
@@ -95,7 +90,7 @@ nav a:hover::after {
 nav a:hover {
   color: #666;
   transform: translateY(-1.5px);
-  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
+  text-shadow: 0 1px 3px rgba(0,0,0,0.04);
 }
 
 /* GENERIC TEXT LINKS */
@@ -131,8 +126,7 @@ a.text-link:hover {
 .hamburger-icon {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
-  /* evenly spaced lines */
+  justify-content: space-around; /* evenly spaced lines */
   width: 30px;
   height: 24px;
   cursor: pointer;
@@ -143,11 +137,9 @@ a.text-link:hover {
 .hamburger-icon span {
   display: block;
   width: 100%;
-  height: 3px;
-  /* slightly thicker lines */
+  height: 3px;             /* slightly thicker lines */
   background-color: black;
-  border-radius: 2px;
-  /* smooth edges */
+  border-radius: 2px;      /* smooth edges */
   transition: all 0.3s ease-in-out;
   transform-origin: center;
 }
@@ -179,8 +171,7 @@ a.text-link:hover {
 }
 
 .menu-links.open {
-  max-height: 500px;
-  /* big enough to show all items */
+  max-height: 500px; /* big enough to show all items */
 }
 
 .hamburger-icon.open span:first-child {
@@ -210,21 +201,14 @@ a.text-link:hover {
 /* SECTIONS */
 
 section {
-  padding: 4vh 3rem;
-  /* vertical + horizontal padding */
-  min-height: 66vh;
-  /* flexible minimum height */
-  margin: 2rem 10rem;
-  /* spacing from page edges */
+  padding: 4vh 3rem;          /* vertical + horizontal padding */
+  min-height: 66vh;           /* flexible minimum height */
+  margin: 2rem 10rem;         /* spacing from page edges */
   box-sizing: border-box;
-  border-radius: 1.5rem;
-  /* rounded corners */
-  background-color: #ffffff;
-  /* light neutral background */
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
-  /* subtle shadow */
-  border: 1px solid rgba(0, 0, 0, 0.05);
-  /* very subtle */
+  border-radius: 1.5rem;      /* rounded corners */
+  background-color: #ffffff;  /* light neutral background */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08); /* subtle shadow */
+  border: 1px solid rgba(0,0,0,0.05); /* very subtle */
   margin-bottom: 4rem !important;
 }
 
@@ -233,39 +217,13 @@ section {
   display: flex;
 }
 
-#profile {
-  background-color: #ffffff;
-}
-
-/* clean white for first impression */
-#about {
-  background-color: #f7f8fa;
-}
-
-/* very light gray-blue for subtle contrast */
-#experience {
-  background-color: #ffffff;
-}
-
-/* white keeps content readable */
-#projects {
-  background-color: #f4f6fb;
-}
-
-/* soft bluish tint to separate visually */
-#skills {
-  background-color: #ffffff;
-}
-
-/* keep it crisp and clean */
-#certifications {
-  background-color: #f7f8fa;
-}
-
-/* subtle contrast, matches About section */
-#contact {
-  background-color: #ffffff;
-}
+#profile { background-color: #ffffff; }        /* clean white for first impression */
+#about { background-color: #f7f8fa; }          /* very light gray-blue for subtle contrast */
+#experience { background-color: #ffffff; }     /* white keeps content readable */
+#projects { background-color: #f4f6fb; }       /* soft bluish tint to separate visually */
+#skills { background-color: #ffffff; }         /* keep it crisp and clean */
+#certifications { background-color: #f7f8fa; } /* subtle contrast, matches About section */
+#contact { background-color: #ffffff; }
 
 /* PROFILE SECTION */
 
@@ -279,7 +237,7 @@ section {
 
 /* Mobile fix */
 @media (max-width: 900px) {
-  #profile {
+#profile {
     flex-direction: column;
     align-items: center;
     text-align: center;
@@ -287,22 +245,21 @@ section {
     min-height: unset !important;
     padding: 2rem 1rem;
     gap: 2rem;
-    margin-bottom: 4rem !important;
+    margin-bottom: 4rem !important; 
   }
 
   .section__pic-container {
-    display: flex;
-    width: 450px;
-    /* larger image area */
-    height: auto;
-    /* adjust naturally */
-    margin: auto 0;
+    height: auto !important;
+    width: 220px !important;   /* keeps it reasonably small */
+    max-width: 80%;
+    margin: 0 auto;
   }
 
   .section__pic-container img {
     width: 100%;
     height: auto;
-    border-radius: 20px;
+    border-radius: 5%;
+    object-fit: cover;
   }
 
   .section__text {
@@ -310,8 +267,7 @@ section {
   }
 
   .title {
-    font-size: 2.2rem;
-    /* smaller heading on mobile */
+    font-size: 2.2rem;           /* smaller heading on mobile */
   }
 
   .section__text__p2 {
@@ -422,7 +378,7 @@ section {
   gap: 2rem;
   margin-bottom: 2rem;
   margin-top: 2rem;
-
+  
 }
 
 .about-details-container {
@@ -444,8 +400,8 @@ section {
   position: absolute;
   right: -5rem;
   bottom: 2.5rem;
-  cursor: pointer;
-  width: 40px;
+  cursor: pointer; 
+  width: 40px;     
   height: auto;
 }
 
@@ -581,37 +537,29 @@ article .icon {
 
 @media (max-width: 900px) {
   #contact .contact-info-upper-container {
-    flex-direction: column;
-    /* stack all contact items vertically */
+    flex-direction: column;  /* stack all contact items vertically */
     padding: 1rem;
     width: 90%;
     margin: 1rem auto;
   }
 
   #contact .contact-info-container {
-    flex-direction: row;
-    /* keep icon + text in a row */
-    flex-wrap: wrap;
-    /* allow text to wrap */
-    align-items: center;
-    /* vertically center icon with text */
+    flex-direction: row;       /* keep icon + text in a row */
+    flex-wrap: wrap;           /* allow text to wrap */
+    align-items: center;       /* vertically center icon with text */
     gap: 0.5rem;
-    margin-bottom: 1rem;
-    /* space between each contact row */
+    margin-bottom: 1rem;       /* space between each contact row */
   }
 
   #contact .contact-info-container p {
     font-size: 1rem;
-    word-break: break-word;
-    /* allow long email to wrap */
+    word-break: break-word;    /* allow long email to wrap */
     text-align: left;
-    flex: 1;
-    /* take remaining width next to icon */
+    flex: 1;                   /* take remaining width next to icon */
   }
 
   #contact .contact-icon {
-    flex-shrink: 0;
-    /* icon keeps its size */
+    flex-shrink: 0;            /* icon keeps its size */
   }
 }
 
@@ -680,7 +628,7 @@ footer p {
 }
 
 a {
-
+  
   text-decoration: none;
 }
 
@@ -811,8 +759,7 @@ section#articles {
   cursor: pointer;
   padding: 12px 16px;
   border-radius: 50%;
-  display: none;
-  /* Hidden by default */
+  display: none; /* Hidden by default */
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
   transition: all 0.3s ease;
 }
@@ -824,16 +771,14 @@ section#articles {
 /* CERTIFICATIONS SECTION */
 #certifications {
   text-align: center;
-  padding: 30px 0 10px 0;
-  /* top and bottom padding */
+  padding: 30px 0 10px 0; /* top and bottom padding */
 }
 
 /* Section headings */
 #certifications h1,
 #certifications h2,
 #certifications p {
-  margin: 0 0 5px 0;
-  /* small spacing below */
+  margin: 0 0 5px 0; /* small spacing below */
 }
 
 /* Badge grid */
@@ -843,34 +788,31 @@ section#articles {
   gap: 20px;
   justify-items: center;
   padding: 10px 0;
-
+  
 }
 
 /* Wrap each badge in a hover container */
 .badge-wrapper {
   display: inline-block;
   border-radius: 1rem;
-  overflow: hidden;
-  /* makes shadow look neat */
+  overflow: hidden; /* makes shadow look neat */
   transition: transform 0.2s ease, box-shadow 0.2s ease;
   cursor: pointer;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+  box-shadow: 0 2px 8px rgba(0,0,0,0.06);
   margin: 0.5rem;
 }
 
 .badge-wrapper:hover {
   transform: translateY(-4px);
-  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 6px 16px rgba(0,0,0,0.1);
 }
 
 @media (max-width: 900px) {
-
   /* Make container full width and reduce padding/margin */
   #certifications .details-container {
     width: 100% !important;
     margin: 0 !important;
-    padding: 10px !important;
-    /* optional, smaller padding */
+    padding: 10px !important; /* optional, smaller padding */
     box-sizing: border-box;
   }
 
@@ -897,8 +839,7 @@ section#articles {
 
   #certifications .badge-grid .badge-wrapper {
     flex: 0 0 auto;
-    min-width: 160px;
-    /* keep the badge width */
+    min-width: 160px; /* keep the badge width */
   }
 
   /* Coursera grid stays a normal grid */
@@ -922,23 +863,21 @@ section#articles {
 .coursera-card {
   display: block;
   background: #ffffff;
-  border: 1px solid rgba(0, 0, 0, 0.08);
+  border: 1px solid rgba(0,0,0,0.08);
   border-radius: 1rem;
   padding: 15px 20px;
   text-align: left;
   text-decoration: none;
   color: #333;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+  box-shadow: 0 2px 8px rgba(0,0,0,0.06);
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 .coursera-card:hover {
   transform: translateY(-4px);
-  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.1);
-  text-decoration: none !important;
-  /* remove underline */
-  color: inherit;
-  /* keep text color stable */
+  box-shadow: 0 4px 14px rgba(0,0,0,0.1);
+  text-decoration: none !important; /* remove underline */
+  color: inherit; /* keep text color stable */
 }
 
 .coursera-card h3 {
@@ -953,7 +892,7 @@ section#articles {
   color: #666;
   text-decoration: none !important;
 }
-
+  
 /* EXPERIENCE SECTION */
 #experience {
   padding: 50px 0;
@@ -970,7 +909,7 @@ section#articles {
   border: 1px solid #e0e0e0;
   border-radius: 12px;
   padding: 20px;
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.05);
+  box-shadow: 0px 4px 10px rgba(0,0,0,0.05);
 }
 
 /* EXPERIENCE CARD HOVER EFFECT */
@@ -979,24 +918,18 @@ section#articles {
 }
 
 .experience-card:hover {
-  transform: translateY(-6px);
-  /* subtle lift */
-  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12);
-  /* deeper shadow */
+  transform: translateY(-6px); /* subtle lift */
+  box-shadow: 0 6px 18px rgba(0,0,0,0.12); /* deeper shadow */
 }
 
 .experience-card.current {
-  border: 1px solid #0073e6;
-  /* blue border */
-  background: #f8fbff;
-  /* very light blue */
+  border: 1px solid #0073e6; /* blue border */
+  background: #f8fbff;       /* very light blue */
 }
 
 .experience-card.current:hover {
-  border-color: #005bb5;
-  /* darker blue border */
-  background: #f0f7ff;
-  /* slightly deeper highlight */
+  border-color: #005bb5; /* darker blue border */
+  background: #f0f7ff;   /* slightly deeper highlight */
 }
 
 

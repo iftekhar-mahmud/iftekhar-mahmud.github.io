@@ -8,7 +8,7 @@ function toggleMenu() {
 
 
 
-const roles = ['CSE Graduate', 'Data Analyst', 'Writer', 'Software Engineer'];
+const roles = ['Assistant Flight Operations Officer', 'Former Analyst', 'CSE Graduate', 'Data Analyst', 'Writer'];
 let currentIndex = 0;
 const roleElement = document.getElementById('role');
 

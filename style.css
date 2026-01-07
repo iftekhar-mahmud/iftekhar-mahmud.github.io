@@ -1,7 +1,10 @@
-this is my css : 
 /* GENERAL */
+@import url('https://fonts.googleapis.com/css2?family=Google+Sans+Flex:opsz,wght@6..144,1..1000&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+:root {
+  --font-body: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-heading: 'Google Sans Flex', system-ui, sans-serif;
+}
 
 * {
   margin: 0;
@@ -12,15 +15,54 @@ body, html {
 }
 
 body {
-  font-family: "Poppins", sans-serif;
+   font-family: var(--font-body);
+  font-size: 16px;
+  line-height: 1.65;
+  color: #222;
 }
 
 html {
   scroll-behavior: smooth;
 }
 
+p, li {
+  font-weight: 400;
+  letter-spacing: 0.01em;
+}
+
 p {
   color: rgb(85, 85, 85);
+}
+
+h1, h2, h3, h4,
+.title,
+.logo,
+.nav-links li a,
+.experience-sub-title {
+  font-family: var(--font-heading);
+  font-weight: 600;
+  letter-spacing: -0.015em;
+}
+
+h1, .title {
+  font-size: clamp(2.4rem, 4vw, 3rem);
+}
+
+h2 {
+  font-size: 1.6rem;
+}
+
+h3 {
+  font-size: 1.25rem;
+}
+
+p {
+  font-size: 1rem;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
 }
 
 /* TRANSITION */
